@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Sekolah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png"
+</head>
+<body onload="selection_tool()">
+    <div class="CTR">
+        <header>
+            <div class="logo">
+                <h1>8A Jadwal</h1>
+                <h3>SMP N 20 Surakarta</h3>
+            </div>
+        </header>
+
+        <main>
+            <div class="dc">
+                <table class="RTA">
+                    <thead>
+                        <tr>
+                            <td class="ONEST">   </td>
+                            <td> 0 </td>
+                            <td> 1 </td>
+                            <td> 2 </td>
+                            <td> 3 </td>
+                            <td> 4 </td>
+                            <td> 5 </td>
+                            <td> 6 </td>
+                            <td> 7 </td>
+                            <td> 8 </td>
+                            <td class="TWOND"> 9 </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td>Senin</td>
+                            <td>    </td>
+                            <td>MAT</td>
+                            <td>IPA</td>
+                            <td colspan="2">SB</td>
+                            <td colspan="2">IPS</td>
+                            <td colspan="2">BI</td>
+                            <td>    </td>
+                        </tr>
+                        <tr id="2">
+                            <td>Selasa</td>
+                            <td>    </td>
+                            <td>PAI</td>
+                            <td colspan="2">INF</td>
+                            <td>PJOR</td>
+                            <td colspan="2">IPA</td>
+                            <td>BK</td>
+                            <td colspan="2">BING</td>
+                        </tr>
+                        <tr id="3">
+                            <td>Rabu</td>
+                            <td>    </td>
+                            <td colspan="2">BI</td>
+                            <td colspan="2">MAT</td>
+                            <td>PPKN</td>
+                            <td colspan="2">IPS</td>
+                            <td colspan="2">BJ</td>
+                        </tr>
+                        <tr id="4">
+                            <td>Kamis</td>
+                            <td>    </td>
+                            <td colspan="2">MAT</td>
+                            <td colspan="2">BI</td>
+                            <td colspan="2">IPA</td>
+                            <td colspan="2">PAI</td>
+                            <td>INF</td>
+                        </tr>
+                        <tr id="5">
+                            <td>Jumat</td>
+                            <td>    </td>
+                            <td colspan="2">BING</td>
+                            <td colspan="2">PPKN</td>
+                            <td colspan="2">PJOR</td>
+                            <td>    </td>
+                            <td>    </td>
+                            <td>    </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <ul class="DVA">
+                <div class="info">
+                    <h2>Informasi</h2>
+                    <h3>• Kadang pulang belum tentu <br>• Jadwal Hari Ini ditandai dengan warna <font style="color: rgb(255, 56, 33);">Merah</font> <br><br>"Setiap langkah kecil menuju ilmu adalah investasi besar untuk masa depanmu."</b></h4>
+                </div>
+                <div class="info">
+                    <h2>Poster</h2>
+                    <img src="https://awsimages.detik.net.id/community/media/visual/2023/05/16/poster-pendidikan-5.png?w=1587" alt="a0">
+                </div>
+                <div class="info">
+                    <h2>Poster</h2>
+                    <img src="https://smpmariamediatrix.sch.id/wp-content/uploads/2022/09/png_20220907_104052_0000-afbcd133.png" alt="a0">
+                </div>
+            </ul>
+            <a href="https://keanukkg.github.io/web-8a/" class="start-button">Kembali</a>
+        </main>
+    </div>
+</body>
+<script type="text/javascript">
+    function selection_tool(){
+        var note= new Date();
+        var Ndatesss=note.getDay();
+        var butss=["1","2","3","4","5"]
+        if (Ndatesss<6){
+        document.getElementById(Ndatesss).style.backgroundColor='salmon';
+        }
+        console.log(Ndatesss)
+        console.log(Ndatesss<6)
+    }
+</script>
+</html>

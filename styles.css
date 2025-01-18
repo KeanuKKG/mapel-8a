@@ -1,0 +1,180 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: none;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(77, 119, 124, 0.7),rgba(0, 0, 0, 0.699),rgba(77, 119, 124, 0.7)),url(foto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Styling untuk header */
+header {
+    background: linear-gradient(to right, #0077b6, #00b4d8); /* Gradient biru */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Styling untuk tabel jadwal */
+.jadwal {
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.jadwal h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+th, td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #0077b6;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.start-button {
+    align-self: center;
+    justify-self: center;
+    background-color: transparent;
+    border: 2px solid aqua; /* Border berwarna Aqua */
+    color: aqua;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu {
+margin-top: 20px;
+}
+
+.start-button:hover {
+    background-color: aqua;
+    color: #333; /* Warna teks saat hover */
+}
+
+.start-button:focus {
+    outline: none;
+}
+
+
+.RTA{
+    border-spacing: 2px;
+    align-self: flex-start;
+    width: 15%;
+    scale: 80%;
+    border-collapse: collapse;
+}
+
+.RTA thead tr{
+    background-color: #0077b6;
+    border-radius: 15px;
+    transition: scale 0.2s;
+}
+.RTA tbody tr{
+    background-color: aliceblue;
+    transition: scale 0.2s;
+}
+.RTA tbody tr:hover{
+    cursor: pointer;
+    background-color:rgb(219, 245, 253);
+    scale: 102%;
+}
+
+.RTA thead tr td{
+    border: none;
+    color: white;
+}
+.RTA tbody tr td{
+    border-style:groove ;
+    border-radius: 1px;
+    border-color: #00b4d8;
+}
+.ONEST{
+    border-top-left-radius: 16px;
+}
+.TWOND{
+    border-top-right-radius: 16px;
+}
+
+.RTA tbody tr:disabled{
+    cursor: pointer;
+    background-color:rgb(158, 195, 206);
+}
+.info{
+    width: 300px;
+    scale: 65%;
+    background-color:#0077b6;
+    padding: 15px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+    border: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: scale 0.3s,background-color 0.3s;
+}
+
+.info h2{
+    color: white;
+}
+.info h3{
+    color: white;
+    background-image:linear-gradient(to right,rgba(0, 225, 255, 0), #00b4d8) ;
+    padding: 5%;
+    border-radius: 15px;
+}
+.info:hover{
+    scale: 67%;
+    background-color:#1a8ecc;
+}
+.info img{
+    width: 250px;
+}
+.DVA{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
